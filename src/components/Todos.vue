@@ -1,4 +1,3 @@
-<!-- components/Todos.vue -->
 <script setup>
 import { ref, computed } from 'vue';
 

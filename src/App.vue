@@ -1,9 +1,10 @@
-<!-- App.vue -->
 <script setup>
 import { ref } from 'vue';
 import Menu from './components/Menu.vue';
 import Todos from './components/Todos.vue';
 import Post from './components/Post.vue';
+import AlbumFoto from './components/AlbumFoto.vue';
+
 
 const selectedMenu = ref('');
 
@@ -18,6 +19,7 @@ const handleMenuClick = (menu) => {
     <div class="content-container">
       <Todos v-if="selectedMenu === 'Todos'" />
       <Post v-if="selectedMenu === 'Post'" />
+      <AlbumFoto v-if="selectedMenu === 'AlbumFoto'" />
       <p v-if="!selectedMenu" class="no-menu-selected">No menu selected</p>
     </div>
   </div>

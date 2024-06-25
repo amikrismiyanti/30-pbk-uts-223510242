@@ -1,4 +1,3 @@
-<!-- components/Menu.vue -->
 <script setup>
 import { defineEmits } from 'vue';
 
@@ -16,6 +15,9 @@ const handleMenuClick = (menu) => {
     </button>
     <button @click="handleMenuClick('Post')" class="menu-button">
       <span class="material-icons">post_add</span> Post
+    </button>
+    <button @click="handleMenuClick('AlbumFoto')" class="menu-button">
+      <span class="material-icons">albums</span> AlbumFoto
     </button>
   </div>
 </template>
